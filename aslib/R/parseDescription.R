@@ -23,6 +23,7 @@
 NULL
 
 # Parses description file and returns an S3 class of the contents
+#' @export
 parseDescription = function(path) {
   assertDirectory(path, access = "r")
 

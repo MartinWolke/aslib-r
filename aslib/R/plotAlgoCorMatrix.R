@@ -49,7 +49,7 @@ plotAlgoCorMatrix = function(asscenario, measure, order.method = "hclust", hclus
 
   cor.matrix = cor(z$data, method = cor.method)
   ind = aslibCorrMatOrder(cor.matrix, order = order.method, hclust.method = hclust.method)
-  corrplot(cor.matrix[ind, ind], method = "shade")
+  return(corrplot(cor.matrix[ind, ind], method = "shade"))
 }
 
 ## helper function, which is basically identical to corrplot::corrMatOrder, but already

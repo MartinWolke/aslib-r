@@ -4,7 +4,7 @@
 #  - returns in wide or long format
 #  - returns also range of orig data and how often runs where successful
 
-
+#' @export
 getEDAAlgoPerf = function(asscenario, measure, impute.failed.runs,  jitter,
   impute.zero.vals, check.log, format, with.instance.id) {
 
